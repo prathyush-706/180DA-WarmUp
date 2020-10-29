@@ -396,10 +396,10 @@ while True:
     # if (oldXAccRawValue - olderX > 50) and (oldYAccRawValue - olderY < 0) and (oldZAccRawValue - olderZ < -500):
     #     print("Forward Push")
 
-    if (ACCx - olderX < -300) and (ACCy - olderY < 0) and (ACCz - olderZ > 1000):
+    if (oldXAccRawValue - olderX < -300) and (oldYAccRawValue - olderY < 0) and (oldZAccRawValue - olderZ > 1000):
         print("Upward Lift")
 
-    if (ACCx - olderX > 500) and (ACCy - olderY < 0) and (ACCz - olderZ < -1000):
+    if (oldXAccRawValue - olderX > 500) and (oldYAccRawValue - olderY < 0) and (oldZAccRawValue - olderZ < -1000):
         print("Forward Push")
 
 
